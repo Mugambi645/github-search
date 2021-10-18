@@ -1,0 +1,57 @@
+<div class="profile">
+    <div class="text-center">
+    <div class="card" style="margin: 3rem; padding: 30px;  text-align: center;">
+<div class="card-title"><app-profile-search (results)="searchRepo($event)"></app-profile-search>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <img src="{{user.avatar_url}}" class="img-circle img-responsive"   alt="profile pic">
+        </div>
+        <div class="row">
+            <h2>{{user.userName}}</h2>
+
+            <div class="col-md-2">
+                <p>Followers: {{user.user_followers}}</p>
+            </div>
+            <div class="col-md-2">
+                <p>Following: {{user.user_following}}</p>
+            </div>
+            <div class="col-md-2">
+                <p>Repositories: {{user.repositories}}</p>
+            </div>
+        </div>
+    </div>
+            <div class="col-md-6">
+                <h1 class="text-center" style="margin: 2rem;">Public repositories</h1>
+                <div class="row repo">
+                    <div class="mb-4 col-md-6" *ngFor="let repo of repos">
+                        <div class="card text-dark h-100">
+                            <div class="text-muted mt-3">
+                                <h4><a href="{{repo.url}}">{{repo.name}}</a></h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">{{repo.info}} </p>
+                            </div>
+                            <div class="text-muted mb-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <small>Language: {{repo.language}}</small>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <small>Created at: {{repo.created_at}}</small>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>

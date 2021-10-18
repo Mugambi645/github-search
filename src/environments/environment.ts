@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  apiUrl : "https://api.github.com/users/"
+  
+  clientId: 'your client id',
+  clientSecret: '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',
 };
 
 /*

@@ -5,8 +5,8 @@ export class User {
         public user_following: number,
         public repositories: number,
         public url: string,
-        public login: string
-
+        public avatar_url:string,
+        public login: string,
 
     ) {}
 }

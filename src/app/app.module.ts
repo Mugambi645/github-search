@@ -7,11 +7,13 @@ import { HeaderComponent } from './header/header.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ProfileSearchComponent } from './profile-search/profile-search.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ProfileComponent
+    ProfileComponent,
+    ProfileSearchComponent
   ],
   imports: [
     BrowserModule,
