@@ -1,0 +1,10 @@
+#githeader {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.card{
+    background-color: cornsilk;
+    padding: 30px;
+   margin: 5rem;
+   position: sticky;
+}
