@@ -8,12 +8,14 @@ import { ProfileComponent } from './profile/profile.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ProfileSearchComponent } from './profile-search/profile-search.component';
+import { DateFormatPipe } from './date-format.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ProfileComponent,
-    ProfileSearchComponent
+    ProfileSearchComponent,
+    DateFormatPipe
   ],
   imports: [
     BrowserModule,
