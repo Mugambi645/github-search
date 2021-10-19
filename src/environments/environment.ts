@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  
-  clientId: 'your client id',
   clientSecret: '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',
+  clientId: 'your client id',
+  
 };
 
 /*

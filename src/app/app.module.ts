@@ -9,7 +9,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ProfileSearchComponent } from './profile-search/profile-search.component';
 import { DateFormatPipe } from './date-format.pipe';
-import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,8 +21,7 @@ import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
-    NgProgressHttpClientModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
